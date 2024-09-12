@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Get Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input onchange="unlock_quote()" class="form-control mx-auto w-auto" name="symbol" placeholder="Symbol" type="symbol" id="symbol">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit" id="quote" disabled>Quote</button>
+        </div>
+    </form>
+
+    <!-- Little script to only allow pressing the quote button if the symbol box contains texts -->
+    <script>
+        function unlock_quote() {
+            symbol = document.getElementById("symbol").value
+            quoteBtn = document.getElementById("quote")
+
+            if (symbol !== "") {
+                quoteBtn.disabled = false
+            } else {
+                quoteBtn.disabled = true
+            }
+        }
+    </script>
+{% endblock %}

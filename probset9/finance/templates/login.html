@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/login" method="post">
+        <div class="mb-3">
+            <input onchange="unlock_login()" autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text" id="username">
+        </div>
+        <div class="mb-3">
+            <input onchange="unlock_login()" class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password" id="password">
+        </div>
+        <button class="btn btn-primary" type="submit" id="login" disabled>Log In</button>
+    </form>
+
+    <!-- Little script to only allow pressing the login button if both username & password contains text -->
+    <script>
+        function unlock_login() {
+            username = document.getElementById("username").value
+            password = document.getElementById("password").value
+            loginBtn = document.getElementById("login")
+
+            if (username !== "" && password !== "") {
+                loginBtn.disabled = false
+            } else {
+                loginBtn.disabled = true
+            }
+        }
+    </script>
+{% endblock %}

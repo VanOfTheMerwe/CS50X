@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post">
+        <div class="mb-3">
+            <input onchange="unlock_register()" autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text" id="username">
+        </div>
+        <div class="mb-3">
+            <input onchange="unlock_register()" class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password" id="password">
+        </div>
+        <div class="mb-3">
+            <input onchange="unlock_register()" class="form-control mx-auto w-auto" name="confirmation" placeholder="Retype Password" type="password" id="confirmation">
+        </div>
+        <div class="mb-3 hide red" id="password_missmatch">
+            <b>Passwords do not match!</b>
+        </div>
+        <button class="btn btn-primary" type="submit" id="register" disabled>Register</button>
+    </form>
+
+    <!-- Little script to only allow pressing the register button if username, password, and password2 contain valid text -->
+    <script>
+        function unlock_register() {
+            username = document.getElementById("username").value
+            password = document.getElementById("password").value
+            password2 = document.getElementById("confirmation").value
+            registerBtn = document.getElementById("register")
+            passwordMissmatchTxt = document.getElementById("password_missmatch")
+
+            // Check that both password fields contain the same value
+            if (password !== password2) {
+                passwordMissmatchTxt.classList.remove("hide")
+                registerBtn.disabled = true
+                return
+            } else {
+                passwordMissmatchTxt.classList.add("hide")
+            }
+
+            // Check that all fields are populated
+            if (username !== "" && password !== "" && password2 !== ""){
+                registerBtn.disabled = false
+            } else {
+                registerBtn.disabled = true
+            }
+        }
+    </script>
+{% endblock %}
