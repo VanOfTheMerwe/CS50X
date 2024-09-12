@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function change_colours(n) {
+                if (n == '4') {
+                    const change = document.getElementById(`${n}`)
+                    const display = document.querySelector('.text')
+                    change.style.backgroundColor = 'green'
+                    display.innerHTML = 'Correct'
+                } else {
+                    const change = document.getElementById(`${n}`)
+                    const display = document.querySelector('.text')
+                    change.style.backgroundColor = 'red'
+                    display.innerHTML = 'Incorrect'
+                }
+            }
+            function check_answers() {
+                const check = document.getElementById('answer')
+                const display = document.querySelector('#text')
+                if (check.value === 'Answer') {
+                    check.style.backgroundColor = 'green'
+                    display.innerHTML = 'Correct'
+                } else {
+                    check.style.backgroundColor = 'red'
+                    display.innerHTML = 'Incorrect'
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3 id = 'multiChoiceHeader'>How many hairs are on Tristin's chin?</h3>
+                <button class = 'wrongbutton' id = '1' onclick = "change_colours('1')">No hair on his chin.</button>
+                <button class = 'wrongbutton' id = '2' onclick = "change_colours('2')">There are 3 individual hairs on his chin.</button>
+                <button class = 'wrongbutton' id = '3' onclick = "change_colours('3')">He has a beautiful mustache.</button>
+                <button class = 'rightbutton' id = '4' onclick = "change_colours('4')">It really doesn't matter.</button>
+                <p class = 'text'></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>Where is the way?</h3>
+                 <input type = 'text' placeholder = 'Just tell me' id = 'answer'/>
+                 <button onclick ="check_answers()">Check answer</button>
+                 <p id = 'text'></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+Tags:
+<!DOCTYPE html>
+<html></html>
+<head></head>
+<link>
+<script></script>
+<meta/>
+<title></title>
+<body></body>
+<h1><h1>
+<h2></h2>
+<h3></h3>
+<p></p>
+<br>/</br>
+<div></div>
+<a></a>
+<img/>
+<ul></ul>
+<li></li>
+
+The "goHome" button uses Bootstrap's shadow function thing.
+
+

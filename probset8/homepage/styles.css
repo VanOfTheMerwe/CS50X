@@ -1,0 +1,235 @@
+/* $box-shadow:                  0 0.5rem 1rem rgba($black, 0.15);
+$box-shadow-sm:               0 0.125rem 0.25rem rgba($black, 0.075);
+$box-shadow-lg:               0 1rem 3rem rgba($black, 0.175);
+$box-shadow-inset:            inset 0 1px 2px rgba($black, 0.075); */
+
+h1 {
+    margin: 20px;
+    padding: 20px;
+}
+
+
+#homepageBody {
+    background-color: goldenrod;
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+#name {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#historylinkindex {
+    color: black;
+    text-decoration: none;
+}
+
+#historylinkindex:hover {
+    color: blue;
+}
+#randomlinkhistory {
+    color: black;
+    text-decoration: none;
+}
+
+#randomlinkhistory:hover {
+    color: blue;
+}
+#experienceslinkhistory {
+    color: black;
+    text-decoration: none;
+}
+
+#experienceslinkhistory:hover {
+    color: blue;
+}
+
+#randomlinkindex {
+    color: black;
+    text-decoration: none;
+}
+
+#randomlinkindex:hover {
+    color: blue;
+}
+
+#experienceslinkindex {
+    color: black;
+    text-decoration: none;
+}
+
+#experienceslinkindex:hover {
+    color: blue;
+}
+
+#randomlinkexp {
+    color: black;
+    text-decoration: none;
+}
+
+#randomlinkexp:hover {
+    color: blue;
+}
+
+#historylinkexp {
+    color: black;
+    text-decoration: none;
+}
+
+#historylinkexp:hover {
+    color: blue;
+}
+
+#homepageGreeting {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#homepageGreetingPara {
+    text-align: center;
+}
+
+#linksheader {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#historyBody {
+    background-color: goldenrod;
+    font-family: Times, "Times New Roman", Georgia, serif;
+}
+
+#historyMainHeader {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#historySecondHeader {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#schoolPara {
+    text-align: center;
+}
+
+#primaryName {
+    text-align: center;
+}
+
+#highName {
+    text-align: center;
+}
+
+#collegeName {
+    text-align: center;
+}
+
+#bodyExperiences {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: goldenrod;
+}
+
+#experienceMainHeader {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#experienceSecondHeader {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#experiencePara {
+    text-align: center;
+}
+
+#otherExp {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#otherExpPara {
+    text-align: center;
+}
+
+#randomBody {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: goldenrod;
+}
+
+#funfactsMainHeader {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#meFactsHeader {
+    text-decoration: underline;
+    text-align: center;
+}
+
+#randomFacts {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#experiencesLinkFacts {
+    text-decoration: none;
+    color: black;
+}
+
+#experiencesLinkFacts:hover {
+    color: blue;
+}
+
+#historyLinkFacts {
+    text-decoration: none;
+    color: black;
+}
+
+#historyLinkFacts:hover {
+    color: blue;
+}
+
+.links {
+    text-align: center;
+}
+
+.linkonfacts {
+    list-style-type: none;
+    text-align: center;
+}
+
+.randomFacts {
+    list-style-type: none;
+    text-align: center;
+}
+
+.goHome {
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    object-fit: contain;
+}
+
+/* "shadow": (
+      property: box-shadow,
+      class: shadow,
+      values: (
+        null: $box-shadow,
+        sm: $box-shadow-sm,
+        lg: $box-shadow-lg,
+        none: none,
+      )
+    ) */
+
+.meFacts {
+    list-style-type: none;
+    text-align: center;
+}
+
+.shadow {
+    width: 7%;
+    height: 13%;
+    margin-top: 0%;
+}
