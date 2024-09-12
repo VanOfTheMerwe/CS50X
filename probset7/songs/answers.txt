@@ -1,0 +1,21 @@
+This is the explanation to the SQL Problem solutions from CS50X Week 7 Songs:
+
+1. You simply select the songs that you want to display in the table and display it.
+
+2. You choose to display the songs by their tempo with the ORDER BY function in sqlite3.
+
+3. You can set the descending value with the DESC and limit it with the LIMIT function. The list is ordered by how long the songs are in miliseconds because that is the more functoinal way.
+
+4. By using the AND functoin you can set up more than one parameter that the list has to adhere to, making the list more specified and useful.
+
+5. You can get the average for the integers in the database with the AVG(what you want the average of) function.
+
+6. Here you check the artist ID in the artist database first and then compare your result with that of the songs database.
+
+7. In the artist database you get the correct ID and then use that to determine what the average of that artist's songs are.
+
+8. You can look for certain words or phrases in the strings of a database with the LIKE '%what it must contain%' function.
+
+In SQL we use ALL CAPS for the functions of the program and the line ends with a semi-colon (;) much like C. I didn't like C.
+
+Is this enough for the check50 to tell me I did it right?
